@@ -1,0 +1,29 @@
+header {
+  dl {
+    display: block;
+    padding: 0;
+    text-align: center;
+    dt {
+      text-align: center;
+      color: $primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 36px;
+      @include phones {
+        font-size: 48px;
+      }
+      @include desktops {
+        font-size: 64px;
+      }
+      white-space: nowrap;
+    }
+    dd {
+      display: inline-block;
+      padding-right: 12px;
+      color: $primary;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  padding: 6px 0;
+}

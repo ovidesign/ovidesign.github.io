@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <div class="page-content" aria-label="Content">
+      <div class="container coming">
+        <div class="logo-container">
+          <img src="{{ site.url }}/assets/img/logo.svg" alt="{{ site.title }} Logo">
+        </div>
+        {{ content }}
+      </div>
+    </div>
+  </body>
+
+</html>

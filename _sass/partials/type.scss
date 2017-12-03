@@ -1,0 +1,104 @@
+body {
+  font-family: $copy;
+  color: $text;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd {
+  font-weight: 400;
+
+}
+
+.fre-co-font {
+  font-family: $asap;
+  text-transform: uppercase;
+  color: $primary;
+  span {
+    display: block;
+    text-transform: none;
+    font-size: .65em;
+    color: $white;
+  }
+}
+article {
+  padding: 16px 0;
+  section {
+    padding: 12px 0 24px 0;
+    border-bottom: 1px solid $lines;
+    &:last-child {
+      border-bottom: 1px solid transparent;
+    }
+    h1 {
+      color: $text;
+      font-size: 24px;
+      &.headline {
+        color: $primary;
+        font-size: 2.0em;
+        display: block;
+      }
+    }
+    h2, h3 {
+      color: $text;
+      font-size: 22px;
+    }
+  }
+  p {
+    font-family: $copy;
+    font-size: 16px;
+  }
+  ul {
+    font-family: $copy;
+    font-size: 16px;
+  }
+}
+
+.fre-callout {
+  margin: 16px 0 24px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid $primary;
+  border-top: 1px solid $primary;
+  font-family: $copy;
+  .lead {
+    font-size: 1.75em;
+    @include phones {
+      &::first-line {
+        font-size: 1.85em;
+      }
+    }
+    @include tablets {
+      &::first-line {
+        font-size: 2.0em;
+      }
+    }
+    @include desktops {
+      &::first-line {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+.fre-callout.fre-center-align {
+  margin: 0;
+  padding: 32px 0 48px 0;
+  background: $dk-blue;
+  border-bottom: 6px solid $primary;
+  border-top: 4px solid $primary;
+  color: $white;
+  font-family: $copy;
+  text-align: center;
+  .lead {
+    font-size: 1.0em;
+    @include phones {
+      font-size: 1.5em;
+    }
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.25em;
+    font-family: $copy;
+    @include phones {
+      font-size: 2.0em;
+    }
+  }
+}

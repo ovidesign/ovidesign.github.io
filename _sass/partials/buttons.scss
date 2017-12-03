@@ -1,0 +1,35 @@
+button.fre-btn,
+a.fre-btn {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 8px 17px;
+  cursor: pointer;
+  // User-Agent Style Overrides
+  border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  border-image: none;
+  &:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    outline: none;
+  }
+  &.btn-default {
+    background-color: #bbb;
+    color: $black;
+  }
+  &.btn-primary {
+    background-color: $primary;
+    color: $white;
+  }
+  &.btn-accent {
+    background-color: $accent;
+    color: $white;
+  }
+  &.btn-transparent {
+    background-color: transparent;
+  }
+}

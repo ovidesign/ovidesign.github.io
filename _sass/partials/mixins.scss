@@ -1,0 +1,37 @@
+// Media Query Breakpoints
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// Media Queries Mixin
+@mixin phones {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Vendor Prefixes
+// HOW TO USE:
+// @include prefix(transition, all 2s ease);
+// OUTPUTS:
+// -webkit-transition: all 2s ease;
+// -moz-transition: all 2s ease;
+// -ms-transition: all 2s ease;
+// -o-transition: all 2s ease;
+// transition: all 2s ease;
+@mixin prefix($property, $value, $vendors: (webkit moz ms o)) {
+  @each $vendor in $vendors {
+    #{'-' + $vendor + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}

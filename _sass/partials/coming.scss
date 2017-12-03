@@ -1,0 +1,18 @@
+.coming {
+  text-align: center;
+  padding-top: 32px;
+  .logo-container {
+    padding: 32px;
+    &::before {
+      content: "Website Coming Soon";
+      font: 16px/3 $copy;
+      color: darken($lines, 30%);
+      text-transform: uppercase;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
