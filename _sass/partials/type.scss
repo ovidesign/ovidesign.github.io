@@ -16,9 +16,19 @@ h6 {
 }
 
 // Posts
-.post section{
+.post {
+  h1 {
+    font-size: 1.5em;
+    color: $primary;
+    @include tablets {
+      font-size: 2em;
+    }
+  }
   h2 {
-    font-size: 1.8em;
+    font-size: 1.35em;
+    @include tablets {
+      font-size: 1.5em;
+    }
   }
   p {
   	font-size: 1.012em;
