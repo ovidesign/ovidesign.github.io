@@ -1,58 +1,54 @@
 body {
-  font-family: $copy;
+  background-color: $white;
   color: $text;
-}
-.h1,.h2,.h3,.h4,.h5,.h6,
-h1, h2, h3, h4, h5, h6,
-dl, dt, dd {
-  font-weight: 400;
-
+  font-family: $serif;
+  font-size: 100%;
+  overflow-x: hidden;
 }
 
-.fre-co-font {
-  font-family: $asap;
-  text-transform: uppercase;
-  color: $primary;
-  span {
-    display: block;
-    text-transform: none;
-    font-size: .65em;
-    color: $white;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans;
 }
-article {
-  padding: 16px 0;
-  section {
-    padding: 12px 0 24px 0;
-    border-bottom: 1px solid $lines;
-    &:last-child {
-      border-bottom: 1px solid transparent;
-    }
-    h1 {
-      color: $text;
-      font-size: 24px;
-      &.headline {
-        color: $primary;
-        font-size: 2.0em;
-        display: block;
-      }
-    }
-    h2, h3 {
-      color: $text;
-      font-size: 22px;
-    }
+
+// Posts
+.post {
+  h2 {
+    font-size: 1.8em;
   }
   p {
-    font-family: $copy;
-    font-size: 16px;
+  	font-size: 1.012em;
+  	line-height: 1.65em;
+  	color: $text;
+  	@include phones {
+  		font-size: 1.2em;
+  	}
+  	@include tablets {
+  		font-size: 1.275em;
+  	}
+  	@include desktops {
+  		font-size: 1.3em;
+  	}
   }
-  ul {
-    font-family: $copy;
-    font-size: 16px;
+
+  .lead {
+  	font-size: 1.25em;
+    @include phones {
+  		font-size: 1.35em;
+  	}
+  	@include tablets {
+  		font-size: 1.45em;
+  	}
+  	@include desktops {
+  		font-size: 1.55em;
+  	}
   }
 }
-
-.fre-callout {
+.callout {
   margin: 16px 0 24px 0;
   padding: 16px 0;
   border-bottom: 1px solid $primary;
@@ -78,7 +74,7 @@ article {
   }
 }
 
-.fre-callout.fre-center-align {
+.callout.center-align {
   margin: 0;
   padding: 32px 0 48px 0;
   background: $dk-blue;
