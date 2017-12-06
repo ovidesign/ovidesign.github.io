@@ -1,8 +1,13 @@
-.hero-image {
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
+.post-header {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $lines;
+  @include desktops {
+    padding: 2em;
   }
 }
 
