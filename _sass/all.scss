@@ -1,5 +1,6 @@
 // Import partials.
 @import
+  "partials/reset",
   "partials/variables",
   "partials/mixins",
   "partials/helper-classes",
@@ -10,6 +11,5 @@
   "partials/buttons",
   "partials/header",
   "partials/footer",
-  "partials/nav",
-  "partials/banner"
+  "partials/nav"
 ;

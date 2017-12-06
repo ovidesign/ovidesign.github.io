@@ -7,9 +7,10 @@
 }
 
 figure {
-  width: 80%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em;
   background-color: $lines;
-  padding: 16px;
   img {
     display: block;
     width: 100%;
