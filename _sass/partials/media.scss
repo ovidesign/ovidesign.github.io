@@ -5,17 +5,18 @@
   height: auto;
   margin: 0 auto;
   padding: 0;
-  background-color: $lines;
+  background-color: $lt-grey;
   @include desktops {
     padding: 2em;
   }
 }
 
 figure {
-  width: 75%;
+  width: 90%;
+  width: calc(100% - 2em);
   margin: 0 auto;
   padding: 1em;
-  background-color: $lines;
+  background-color: $lt-grey;
   img {
     display: block;
     width: 100%;

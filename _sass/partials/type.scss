@@ -25,10 +25,15 @@ h6 {
     }
   }
   h2 {
+    padding-top: 18px;
     font-size: 1.35em;
     @include tablets {
       font-size: 1.5em;
     }
+  }
+  h3 {
+    padding-top:8px;
+    font-size: 1.2em;
   }
   p {
   	font-size: 1.012em;
@@ -56,5 +61,26 @@ h6 {
   	@include desktops {
   		font-size: 1.55em;
   	}
+  }
+  li {
+    font: 1.2em/1.8 $sans;
+  }
+  a {
+    color: $primary;
+  }
+  .pullquoute {
+    &:before {
+      content: attr(data-pullquote);
+      display: block;
+      padding: 2em 4px;
+      background-color: $lt-grey;
+      text-align: center;
+      font: italic 1.3em/1.6 $serif;
+      @include tablets {
+        font: italic 1.6em/2 $serif;
+      }
+      border-top: double 12px #ddd;
+      border-bottom: double 12px #ddd;
+    }
   }
 }
