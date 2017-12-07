@@ -15,11 +15,13 @@
   {% endif %}
   <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i');
+  </style>
   {% if page.schema %}
   {% include schema.html %}
   {% endif %}
