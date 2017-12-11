@@ -15,3 +15,11 @@
 .rotate-180 {
   @include prefix(transform, rotate(180deg));
 }
+
+.floatl-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
