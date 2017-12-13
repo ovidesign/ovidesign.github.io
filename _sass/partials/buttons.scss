@@ -32,5 +32,8 @@ a.btn {
   }
   &.btn-transparent {
     background-color: transparent;
+    &#navicon {
+      padding: 2px 3px;
+    }
   }
 }

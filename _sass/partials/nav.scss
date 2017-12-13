@@ -1,12 +1,52 @@
-.nav {
-  margin-bottom: 24px;
-  padding: 12px 0 12px 16px;
-  .logo-container {
-    width: 200px;
+#navicon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  @include tablets {
+    display: none;
   }
-  img {
+}
+.nav {
+  display: none;
+  @include tablets {
+    display: block !important;
+  }
+  background-color: #f9f9f9;
+  margin: 0 0;
+  vertical-align: middle;
+  text-align: center;
+  li {
+    padding: 0 2em;
+    list-style: none;
     display: block;
-    width: 100%;
-    height: auto;
+    font-family: $copy;
+    @include tablets {
+      display: inline-block;
+      border-right: 1px solid darken($white, 7.5%);
+      &:first-child {
+        border-left: 1px solid darken($white, 7.5%);
+      }
+      &:hover {
+        a {
+          color: $primary;
+        }
+      }
+    }
+    &.active {
+      a {
+        color: $primary;
+      }
+    }
+    a {
+      padding: 12px 12px;
+      color: $text;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      @include desktops {
+        padding: 16px 48px;
+      }
+    }
   }
 }

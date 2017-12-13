@@ -1,4 +1,13 @@
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script>
+  // SlideToggle for the nav
+  var navicon = $("#navicon");
+  var nav = $(".nav");
+  navicon.click(function(){
+    nav.slideToggle();
+  });
+</script>
+<script>
   // Copyright info
   function freCopy() {
     var d = new Date();
