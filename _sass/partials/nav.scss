@@ -24,11 +24,11 @@ nav {
 #navicon {
   display: block;
   position: absolute;
-  height: 22px;
-  width: 22px;
+  height: 18px;
+  width: 24px;
   background-image: url(../assets/img/navicon.svg);
   border-radius: 0px;
-  top: 14px;
+  top: 16px;
   right: 14px;
   @include tablets {
     display: none;
@@ -63,9 +63,11 @@ nav {
         }
       }
     }
-    &.active {
+    &.active,
+    &.active:hover {
+      background: $primary;
       a {
-        color: $primary;
+        color: $white;
       }
     }
     a {
