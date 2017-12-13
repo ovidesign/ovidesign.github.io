@@ -1,9 +1,4 @@
 <header>
-  <div class="logo-container">
-    <a href="{{ site.url }}">
-      <img src="{{ site.url }}/assets/img/logo.svg" alt="{{ site.title }}">
-    </a>
-  </div>
   {% for val in page.header %}
   <img class="post-header" src="{{site.url}}/assets/img/{{val.img}}" alt="{{val.alt}}">
   {% endfor %}

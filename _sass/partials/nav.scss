@@ -1,18 +1,48 @@
+nav {
+  position: relative;
+  background-color: $white;
+  @include tablets {
+    background-color: $nav;
+  }
+  margin-bottom: 24px;
+  border-bottom: 5px solid darken($nav, 10%);
+}
+.nav-logo {
+  background-color: $white;
+  width: 200px;
+  padding: 1em;
+  float: none;
+  @include tablets {
+    float: left;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 #navicon {
   display: block;
   position: absolute;
-  top: 0;
-  right: 12px;
+  height: 22px;
+  width: 22px;
+  background-image: url(../assets/img/navicon.svg);
+  border-radius: 0px;
+  top: 14px;
+  right: 14px;
   @include tablets {
     display: none;
   }
 }
 .nav {
   display: none;
+  float: none;
+  background-color: $nav;
   @include tablets {
     display: block !important;
+    float: left;
   }
-  background-color: #f9f9f9;
+  padding: 0 0;
   margin: 0 0;
   vertical-align: middle;
   text-align: center;
@@ -23,9 +53,9 @@
     font-family: $copy;
     @include tablets {
       display: inline-block;
-      border-right: 1px solid darken($white, 7.5%);
+      border-right: 1px solid darken($nav, 10%);
       &:first-child {
-        border-left: 1px solid darken($white, 7.5%);
+        border-left: 1px solid darken($nav, 10%);
       }
       &:hover {
         a {
@@ -39,13 +69,13 @@
       }
     }
     a {
-      padding: 12px 12px;
+      padding: 12px 0;
       color: $text;
       text-decoration: none;
       display: block;
       font-size: 16px;
-      @include desktops {
-        padding: 16px 48px;
+      @include tablets {
+        padding: 1em;
       }
     }
   }
