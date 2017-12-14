@@ -30,23 +30,25 @@ nav {
   float: none;
   background-color: $nav;
   border-top: 1px solid darken($nav, 10%);
+  padding: 0 0;
+  margin: 0 0;
+  vertical-align: middle;
+  text-align: left;
   @include tablets {
     display: block !important;
     float: left;
     border-top: 0px solid transparent;
+    text-align: center;
   }
-  padding: 0 0;
-  margin: 0 0;
-  vertical-align: middle;
-  text-align: center;
   li {
     display: block;
-    padding: 0 2em;
-    border-bottom: 1px solid darken($nav, 10%);
+    padding: 1em 2em;
     list-style: none;
+    border-bottom: 1px solid darken($nav, 10%);
     font-family: $copy;
     @include tablets {
       display: inline-block;
+      padding: 0 2em;
       border-bottom: 0px solid transparent;
       border-right: 1px solid darken($nav, 10%);
       &:first-child {
