@@ -2,10 +2,11 @@
 nav {
   position: relative;
   background-color: $white;
+  border-bottom: 5px solid darken($nav, 10%);
+  border-top: 1px solid darken($nav, 10%);
   @include tablets {
     background-color: $nav;
   }
-  border-bottom: 5px solid darken($nav, 10%);
 }
 
 // Nav Logo
@@ -45,12 +46,14 @@ nav {
     padding: 1em 2em;
     list-style: none;
     border-bottom: 1px solid darken($nav, 10%);
+    text-indent: .8em;
     font-family: $copy;
     @include tablets {
       display: inline-block;
       padding: 0 2em;
       border-bottom: 0px solid transparent;
       border-right: 1px solid darken($nav, 10%);
+      text-indent: 0;
       &:first-child {
         border-left: 1px solid darken($nav, 10%);
       }

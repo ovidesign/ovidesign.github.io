@@ -9,4 +9,9 @@ margin-top: 16px;
   max-width: 900px;
   height: auto;
   margin: 0 auto;
+  background-color: $lt-grey;
+  padding: 0;
+  @include desktops {
+    padding: 2em;
+  }
 }
