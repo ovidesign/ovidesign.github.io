@@ -1,12 +1,14 @@
+// Whole Nav Element
 nav {
   position: relative;
   background-color: $white;
   @include tablets {
     background-color: $nav;
   }
-  margin-bottom: 24px;
   border-bottom: 5px solid darken($nav, 10%);
 }
+
+// Nav Logo
 .nav-logo {
   background-color: $white;
   width: 200px;
@@ -21,38 +23,31 @@ nav {
     height: auto;
   }
 }
-#navicon {
-  display: block;
-  position: absolute;
-  height: 18px;
-  width: 24px;
-  background-image: url(../assets/img/navicon.svg);
-  border-radius: 0px;
-  top: 16px;
-  right: 14px;
-  @include tablets {
-    display: none;
-  }
-}
+
+// Nav & Links
 .nav {
   display: none;
   float: none;
   background-color: $nav;
+  border-top: 1px solid darken($nav, 10%);
   @include tablets {
     display: block !important;
     float: left;
+    border-top: 0px solid transparent;
   }
   padding: 0 0;
   margin: 0 0;
   vertical-align: middle;
   text-align: center;
   li {
-    padding: 0 2em;
-    list-style: none;
     display: block;
+    padding: 0 2em;
+    border-bottom: 1px solid darken($nav, 10%);
+    list-style: none;
     font-family: $copy;
     @include tablets {
       display: inline-block;
+      border-bottom: 0px solid transparent;
       border-right: 1px solid darken($nav, 10%);
       &:first-child {
         border-left: 1px solid darken($nav, 10%);
@@ -63,11 +58,9 @@ nav {
         }
       }
     }
-    &.active,
-    &.active:hover {
-      background: $primary;
+    &.active {
       a {
-        color: $white;
+        color: $primary;
       }
     }
     a {
@@ -80,5 +73,20 @@ nav {
         padding: 1em;
       }
     }
+  }
+}
+
+// Navicon - Mobile only
+#navicon {
+  display: block;
+  position: absolute;
+  height: 18px;
+  width: 24px;
+  background-image: url(../assets/img/navicon.svg);
+  border-radius: 0px;
+  top: 16px;
+  right: 14px;
+  @include tablets {
+    display: none;
   }
 }
