@@ -2,7 +2,7 @@
 nav {
   position: relative;
   background-color: $white;
-  border-bottom: 5px solid darken($nav, 10%);
+  border-bottom: 1px solid darken($nav, 10%);
   border-top: 1px solid darken($nav, 10%);
   @include tablets {
     background-color: $nav;
