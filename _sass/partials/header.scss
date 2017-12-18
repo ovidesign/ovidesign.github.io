@@ -1,7 +1,7 @@
 header {
   position: relative;
   z-index: 100;
-  padding-top: 1.5em;
+  padding-top: 1em;
   &:before {
     content: "";
     display: block;
@@ -19,7 +19,7 @@ header {
   display: block;
   position: relative;
   z-index: 200;
-  width: 80%;
+  width: 90%;
   max-width: 900px;
   height: auto;
   margin: 0 auto;
