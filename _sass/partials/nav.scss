@@ -14,6 +14,7 @@ nav {
   background-color: $white;
   width: 200px;
   padding: 1em;
+  z-index: 400;
   float: none;
   @include tablets {
     float: left;
@@ -27,19 +28,39 @@ nav {
 
 // Nav & Links
 .nav {
-  display: none;
+  display: block;
+  position: absolute;
   float: none;
-  background-color: $nav;
-  border-top: 1px solid darken($nav, 10%);
-  padding: 0 0;
+  height: 1px;
+  max-height: 1px;
+  width: 1px;
+  @include prefix(transition, max-height 0.4s ease);
   margin: 0 0;
+  padding: 0 0;
   vertical-align: middle;
   text-align: left;
+  overflow: hidden;
+  background-color: transparent;
+  border-top: 1px solid darken($nav, 10%);
+  &.visible {
+    position: relative;
+    top: auto;
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    overflow: visible;
+    background-color: $nav;
+  }
   @include tablets {
-    display: block !important;
+    position: relative;
+    top: auto;
+    height: 100%;
+    overflow: visible;
+    background-color: $nav;
     float: left;
-    border-top: 0px solid transparent;
+    width: auto;
     text-align: center;
+    border-top: 0px solid transparent;
   }
   li {
     display: block;

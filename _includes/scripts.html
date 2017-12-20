@@ -3,8 +3,9 @@
   // SlideToggle for the nav
   var navicon = $("#navicon");
   var nav = $(".nav");
+  var visible = ("visible");
   navicon.click(function(){
-    nav.slideToggle();
+    nav.toggleClass(visible);
   });
 </script>
 <script>
