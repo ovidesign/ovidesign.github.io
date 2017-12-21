@@ -5,7 +5,7 @@
     padding: 32px;
     &::before {
       content: "Website Coming Soon";
-      font: 16px/3 $copy;
+      font: 16px/3 $sans;
       color: darken($lines, 30%);
       text-transform: uppercase;
     }
