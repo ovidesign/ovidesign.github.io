@@ -18,52 +18,52 @@ h6 {
 // Posts
 .post {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: $primary;
     @include tablets {
-      font-size: 2em;
+      font-size: 2.2em;
     }
   }
   h2 {
     padding-top: 18px;
-    font-size: 1.35em;
+    font-size: 1.5em;
     @include tablets {
-      font-size: 1.5em;
+      font-size: 1.65em;
     }
   }
   h3 {
     padding-top:8px;
-    font-size: 1.2em;
+    font-size: 1.375em;
   }
   p {
-  	font-size: 1.1em;
+  	font-size: 1.275em;
   	line-height: 1.72em;
   	color: $text;
   	@include phones {
-  		font-size: 1.2em;
+  		font-size: 1.30em;
   	}
   	@include tablets {
-  		font-size: 1.275em;
+  		font-size: 1.35em;
   	}
   	@include desktops {
-  		font-size: 1.3em;
+  		font-size: 1.375em;
   	}
   }
 
   .lead {
-  	font-size: 1.25em;
+  	font-size: 1.55em;
     @include phones {
-  		font-size: 1.35em;
+  		font-size: 1.65em;
   	}
   	@include tablets {
-  		font-size: 1.45em;
+  		font-size: 1.75em;
   	}
   	@include desktops {
-  		font-size: 1.55em;
+  		font-size: 1.85em;
   	}
   }
   li {
-    font: 1.2em/1.8 $sans;
+    font: 1.275em/1.8 $sans;
   }
   a {
     color: $primary;
