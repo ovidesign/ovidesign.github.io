@@ -1,9 +1,12 @@
+$primary: #1565c0;
 body {
-  background-color: $white;
-  color: $text;
-  font-family: $sans;
-  font-size: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #212121;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 100%;
 }
 
 // Posts
@@ -29,7 +32,6 @@ body {
   p {
   	font-size: 1.25em;
   	line-height: 1.475em;
-  	color: $text;
   	@include phones {
   		font-size: 1.35em;
   	}

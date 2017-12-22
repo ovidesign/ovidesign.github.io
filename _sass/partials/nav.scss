@@ -1,7 +1,9 @@
+$nav: #f1f1f1;
+$nav-dk: #6d6d6d;
 // Whole Nav Element
 nav {
   position: relative;
-  background-color: $white;
+  background-color: #fff;
   border-bottom: 1px solid darken($nav, 10%);
   border-top: 1px solid darken($nav, 10%);
   @include tablets {
@@ -11,7 +13,7 @@ nav {
 
 // Nav Logo
 .nav-logo {
-  background-color: $white;
+  background-color: #fff;
   width: 200px;
   padding: 1em;
   z-index: 400;
@@ -33,7 +35,7 @@ nav {
   height: 1%;
   max-height: 1px;
   width: 100%;
-  @include prefix(transition, all 0.4s ease);
+  transition: all 0.4s ease;
   margin: 0 0;
   padding: 0 0;
   vertical-align: middle;
@@ -64,7 +66,6 @@ nav {
     list-style: none;
     border-bottom: 1px solid darken($nav, 10%);
     text-indent: .8em;
-    font-family: $sans;
     @include tablets {
       display: inline-block;
       padding: 0 2em;
@@ -87,7 +88,7 @@ nav {
     }
     a {
       padding: 12px 0;
-      color: $text;
+      color: #212121;
       text-decoration: none;
       display: block;
       font-size: 16px;
