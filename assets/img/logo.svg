@@ -16,7 +16,7 @@
    viewBox="0 0 611.37447 60.000002"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="logo.svg">
   <defs
      id="defs4">
@@ -52,9 +52,9 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="703"
+     inkscape:window-height="697"
      inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      units="px"
      fit-margin-top="0"
@@ -68,11 +68,13 @@
     <sodipodi:guide
        position="139.82556,0.47931003"
        orientation="0,1"
-       id="guide4224" />
+       id="guide4224"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="121.08723,100.53492"
        orientation="0,1"
-       id="guide4226" />
+       id="guide4226"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
