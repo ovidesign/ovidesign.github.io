@@ -1,16 +1,16 @@
-<nav class="group">
-  <div class="nav-logo">
-    <a href="{{ site.url }}">
-      <img src="{{ site.url }}/assets/img/logo.svg" alt="{{ site.title }}">
-    </a>
-    <button id="navicon" class="btn btn-transparent">
-    </button>
+<nav>
+  <a class="nav-logo" href="{{ site.url }}">
+    <img src="./assets/img/logo.svg" alt="{{ site.title }}">
+  </a>
+  <a href="#menu" class="btn btn-transparent" id="navicon"></a>
+  <div class="container">
+    <ul class="nav" id="menu">
+      <li class="close"><a href="#">Close</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="mailto:michael@ovidesign.com" class="btn btn-primary btn-nav">Get in Touch</a></li>
+    </ul>
   </div>
-  <ul class="nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-    <li class="active"><a href="#">Blog</a></li>
-  </ul>
 </nav>

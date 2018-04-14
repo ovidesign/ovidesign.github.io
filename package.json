@@ -1,0 +1,26 @@
+{
+  "name": "ovidesign.github.io",
+  "version": "1.0.0",
+  "description": "Build Tools for ovidesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovidesign/ovidesign.github.io.git"
+  },
+  "author": "Michael Freiman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovidesign/ovidesign.github.io/issues"
+  },
+  "homepage": "https://github.com/ovidesign/ovidesign.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "browsersync": "^0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-sass": "^4.0.1"
+  }
+}

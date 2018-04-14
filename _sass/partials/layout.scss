@@ -1,4 +1,16 @@
-// Article
+.container {
+  width: 96%;
+  min-width: 290px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+  @include tablets {
+    width: 92%;
+  }
+  @include desktops {
+    width: 90%;
+  }
+}
 article {
   width: 90%;
   min-width: 290px;

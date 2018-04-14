@@ -4,7 +4,7 @@ a.btn {
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
-  border-radius: 4px;
+  border-radius: 22px;
   font-family: $sans;
   font-size: 16px;
   padding: 12px 18px;
@@ -22,8 +22,11 @@ a.btn {
     background-color: $lt-grey;
     color: $text;
   }
-  &.btn-primary {
-    background-color: $btn;
+  &.btn-primary.btn-nav {
+    background-color: $primary;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $white;
     color: $white;
   }
   &.btn-accent {

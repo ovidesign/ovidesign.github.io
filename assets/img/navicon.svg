@@ -14,7 +14,7 @@
    viewBox="0 0 24 18.000001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
    sodipodi:docname="navicon.svg">
   <defs
      id="defs4" />
@@ -34,9 +34,9 @@
      units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1366"
-     inkscape:window-height="703"
+     inkscape:window-height="697"
      inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      showborder="true" />
   <metadata
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,23 +56,20 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-1034.3622)">
-    <g
-       id="g4189">
-      <path
-         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M -7.3841859e-7,1041.8622 24,1041.8622 l 0,3 -24.00000073841859,0 z"
-         id="rect4136"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M -7.3841859e-7,1034.3622 24,1034.3622 l 0,3 -24.00000073841859,0 z"
-         id="rect4136-3"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M -7.3841859e-7,1049.3622 24,1049.3622 l 0,3 -24.00000073841859,0 z"
-         id="rect4136-6"
-         inkscape:connector-curvature="0" />
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4136"
+       d="M -7.3841859e-7,1041.8622 H 24 v 3 H -7.3841859e-7 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4136-3"
+       d="M -7.3841859e-7,1034.3622 H 24 v 3 H -7.3841859e-7 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4136-6"
+       d="M -7.3841859e-7,1049.3622 H 24 v 3 H -7.3841859e-7 Z"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

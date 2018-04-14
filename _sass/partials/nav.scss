@@ -1,115 +1,102 @@
-$nav: #f1f1f1;
-$nav-dk: #6d6d6d;
-// Whole Nav Element
 nav {
   position: relative;
-  background-color: #fff;
-  border-bottom: 1px solid darken($nav, 10%);
-  border-top: 1px solid darken($nav, 10%);
-  @include tablets {
-    background-color: $nav;
-  }
-}
-
-// Nav Logo
-.nav-logo {
-  background-color: #fff;
-  width: 200px;
   padding: 1em;
-  z-index: 400;
-  float: none;
-  @include tablets {
-    float: left;
+  background-color: $primary;
+}
+.nav-logo {
+  position: relative;
+  @include phones {
+    position: absolute;
+    top: 20px;
+    left: 12px;
   }
   img {
-    display: block;
-    width: 100%;
+    width: 50px;
     height: auto;
+    @include phones {
+      width: 80px;
+    }
   }
 }
 
-// Nav & Links
 .nav {
-  display: block;
-  float: none;
-  height: 1%;
-  max-height: 1px;
-  width: 100%;
-  transition: all 0.4s ease;
-  margin: 0 0;
-  padding: 0 0;
-  vertical-align: middle;
-  text-align: left;
-  overflow: hidden;
+  transition: all 0.5s ease;
+  position: fixed;
+  text-align: center;
+  text-indent: -100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  min-height: 0%;
+  opacity: 0;
+  z-index: -100;
   background-color: transparent;
-  border-top: 1px solid darken($nav, 10%);
-  &.visible {
-    top: auto;
-    height: 100%;
-    max-height: 400px;
-    width: 100%;
-    overflow: visible;
-    background-color: $nav;
+  padding-top: 68px;
+  .close {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    top: 14px;
+    right: 8px;
   }
-  @include tablets {
+  &:target {
+    opacity: 1;
     height: 100%;
-    overflow: visible;
-    background-color: $nav;
-    float: left;
-    width: auto;
-    text-align: center;
-    border-top: 0px solid transparent;
+    min-height: 100%;
+    z-index: 300;
+    background-color: rgba(0, 0, 0, .75);
+    text-indent: 0;
+    .close {
+      display: block;
+    }
+    @include phones {
+      padding-top: 0;
+      background-color: transparent;
+      .close {
+        display: none;
+        height: 0;
+      }
+    }
   }
+    @include phones {
+      display: block;
+      position: relative;
+      height: 100%;
+      min-height: 100%;
+      opacity: 1;
+      z-index: 0;
+      padding-top: 0;
+      text-align: right;
+      text-indent: 0;
+    }
   li {
     display: block;
-    padding: 1em 2em;
-    list-style: none;
-    border-bottom: 1px solid darken($nav, 10%);
-    text-indent: .8em;
-    @include tablets {
+    padding: 16px 24px;
+    @include phones {
       display: inline-block;
-      padding: 0 2em;
-      border-bottom: 0px solid transparent;
-      border-right: 1px solid darken($nav, 10%);
-      text-indent: 0;
-      &:first-child {
-        border-left: 1px solid darken($nav, 10%);
-      }
-      &:hover {
-        a {
-          color: $primary;
-        }
-      }
+      padding: 0 24px;
     }
-    &.active {
-      a {
-        color: $primary;
-      }
-    }
-    a {
-      padding: 12px 0;
-      color: #212121;
-      text-decoration: none;
-      display: block;
-      font-size: 16px;
-      @include tablets {
-        padding: 1em;
-      }
-    }
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
   }
 }
 
-// Navicon - Mobile only
 #navicon {
   display: block;
-  position: absolute;
-  height: 18px;
-  width: 24px;
-  background-image: url(../assets/img/navicon.svg);
-  border-radius: 0px;
-  top: 16px;
-  right: 14px;
-  @include tablets {
+  @include phones {
     display: none;
   }
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  width: 24px;
+  height: 18px;
+  border-radius: 0px;
+  background-image: url(../assets/img/navicon.svg);
 }

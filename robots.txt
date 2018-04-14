@@ -1,0 +1,3 @@
+Sitemap: https://www.ovidesign.com/sitemap.xml
+
+User-agent: *
