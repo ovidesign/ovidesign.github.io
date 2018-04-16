@@ -1,0 +1,24 @@
+.ovi-logo {
+  position: relative;
+  display: block;
+  width: 96px;
+  margin: 0 auto;
+  @include tablets {
+    width: 148px;
+    margin: 0;
+    margin-left: 48px;
+  }
+  img {
+    position: absolute;
+    top: -48px;
+    width: 96px;
+    height: 96px;
+    border: solid 8px #fff;
+    border-radius: 50%;
+    @include tablets {
+      top: -74px;
+      width: 148px;
+      height: 148px;
+    }
+  }
+}

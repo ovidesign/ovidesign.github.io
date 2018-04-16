@@ -1,16 +1,10 @@
-<nav>
-  <a class="nav-logo" href="{{ site.url }}">
-    <img src="./assets/img/logo.svg" alt="{{ site.title }}">
-  </a>
-  <a href="#menu" class="btn btn-transparent" id="navicon"></a>
-  <div class="container">
-    <ul class="nav" id="menu">
-      <li class="close"><a href="#">Close</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="mailto:michael@ovidesign.com" class="btn btn-primary btn-nav">Get in Touch</a></li>
-    </ul>
-  </div>
+<nav class="nav">
+  <ul class="menu">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="mailto:michael@ovidesign.com" class="btn btn-primary btn-nav">Get in Touch</a></li>
+  </ul>
 </nav>
+{% include nav-bar.html %}

@@ -1,102 +1,32 @@
-nav {
-  position: relative;
-  padding: 1em;
-  background-color: $primary;
-}
-.nav-logo {
-  position: relative;
-  @include phones {
-    position: absolute;
-    top: 20px;
-    left: 12px;
-  }
-  img {
-    width: 50px;
-    height: auto;
-    @include phones {
-      width: 80px;
-    }
-  }
-}
-
 .nav {
-  transition: all 0.5s ease;
-  position: fixed;
-  text-align: center;
-  text-indent: -100px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 0;
-  min-height: 0%;
-  opacity: 0;
-  z-index: -100;
-  background-color: transparent;
-  padding-top: 68px;
-  .close {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    top: 14px;
-    right: 8px;
-  }
-  &:target {
-    opacity: 1;
-    height: 100%;
-    min-height: 100%;
-    z-index: 300;
-    background-color: rgba(0, 0, 0, .75);
-    text-indent: 0;
-    .close {
-      display: block;
-    }
-    @include phones {
-      padding-top: 0;
-      background-color: transparent;
-      .close {
-        display: none;
-        height: 0;
-      }
-    }
-  }
-    @include phones {
-      display: block;
-      position: relative;
-      height: 100%;
-      min-height: 100%;
-      opacity: 1;
-      z-index: 0;
-      padding-top: 0;
-      text-align: right;
-      text-indent: 0;
-    }
-  li {
+  display: none;
+}
+@include tablets {
+  .nav {
     display: block;
-    padding: 16px 24px;
-    @include phones {
-      display: inline-block;
-      padding: 0 24px;
+    height: 74px;
+    background-color: #fff;
+    ul {
+      text-align: right;
+      padding-right: 24px;
     }
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 24px 48px;
+      text-decoration: none;
+      color: $text;
+      font-size: 16px;
+    }
   }
 }
-
-#navicon {
+.nav-bar {
   display: block;
-  @include phones {
+  background-color: $white;
+  height: 48px;
+  @include tablets {
     display: none;
   }
-  position: absolute;
-  top: 32px;
-  right: 24px;
-  width: 24px;
-  height: 18px;
-  border-radius: 0px;
-  background-image: url(../assets/img/navicon.svg);
 }
