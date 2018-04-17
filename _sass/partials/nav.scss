@@ -1,32 +1,118 @@
+// Nav
 .nav {
-  display: none;
-}
-@include tablets {
-  .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 150;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  pointer-events: none;
+  &:after {
+    content: '';
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity;
+    transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
+  }
+
+  @include tablets {
+    position: relative;
+    display: block;
+    z-index: 120;
     height: 74px;
     background-color: #fff;
-    ul {
-      text-align: right;
-      padding-right: 24px;
-    }
-    li {
-      display: inline-block;
-    }
-    a {
-      display: block;
-      padding: 24px 48px;
-      text-decoration: none;
-      color: $text;
-      font-size: 16px;
-    }
   }
 }
+
+.nav__ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 160;
+  max-width: 400px;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateX(-103%);
+          transform: translateX(-103%);
+  pointer-events: auto;
+  background-color: #fff;
+  will-change: transform;
+  @include tablets {
+    display: block;
+    max-width: 100%;
+    text-align: right;
+    width: 100%;
+    padding-right: 24px;
+    box-shadow: none;
+    transform: translateX(0);
+  }
+}
+
+.nav__li {
+  @include tablets {
+    display: inline-block;
+  }
+}
+
+.nav__a {
+  @include tablets {
+    display: block;
+    padding: 24px 48px;
+    text-decoration: none;
+    color: $text;
+    font-size: 16px;
+  }
+}
+
+// Nav Animation
+.nav--visible .nav__ul {
+    -webkit-transform: none;
+            transform: none;
+}
+
+.nav--animatable .nav__ul {
+    transition: all 130ms ease-in;
+}
+
+.nav--visible.nav--animatable .nav__ul {
+    transition: all 330ms ease-out;
+}
+
+.nav--visible {
+  pointer-events: auto;
+}
+.nav--visible.nav:after {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+// Nav bar (Mobile Only)
 .nav-bar {
+  position: relative;
   display: block;
   background-color: $white;
   height: 48px;
   @include tablets {
     display: none;
   }
+}
+
+.nav-bar__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Menu";
+  color: #fff;
+  background-color: #000;
+  width: 40px;
+  height: 40px;
 }
