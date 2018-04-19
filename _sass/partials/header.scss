@@ -1,4 +1,23 @@
-header {
-  height: 300px;
+.header {
   background-color: $violet;
+}
+.header__section {
+  overflow: hidden;
+  min-height: 300px;
+  background-image: url("assets/img/pomo-phone.svg");
+  background-size: contain;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+}
+
+.header__heading {
+  padding: 75px 1em;
+  font-size: 3em;
+  @include tablets {
+    padding: 150px 3em;
+    font-size: 6em;
+  }
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 600;
 }

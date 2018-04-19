@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="102.04199"
+   height="211.62245"
+   viewBox="0 0 26.99861 55.991775"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="pomo-phone.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7148375"
+     inkscape:cx="-59.74384"
+     inkscape:cy="94.632609"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="1366"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Bg"
+     transform="translate(-34.564612,-215.34277)" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.564612,-215.34277)">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.17097534"
+       d="m 38.315994,215.42826 c -2.030932,0 -3.665894,1.63497 -3.665894,3.6659 v 48.48901 c 0,2.03093 1.634962,3.66589 3.665894,3.66589 h 19.495848 c 2.030932,0 3.665894,-1.63496 3.665894,-3.66589 v -48.48901 c 6e-6,-2.03093 -1.634962,-3.6659 -3.665894,-3.6659 z m 9.747924,1.84023 a 0.29564073,0.29564073 0 0 1 0.295553,0.29554 0.29564073,0.29564073 0 0 1 -0.295553,0.29555 0.29564073,0.29564073 0 0 1 -0.295547,-0.29555 0.29564073,0.29564073 0 0 1 0.295547,-0.29554 z m -4.204608,1.53723 a 0.50258923,0.50258923 0 0 1 0.502821,0.5025 0.50258923,0.50258923 0 0 1 -0.502821,0.50282 0.50258923,0.50258923 0 0 1 -0.502502,-0.50282 0.50258923,0.50258923 0 0 1 0.502502,-0.5025 z m 2.135124,0.26613 h 4.138968 c 0.131029,0 0.236377,0.10535 0.236377,0.23637 0,0.13103 -0.105348,0.2367 -0.236377,0.2367 h -4.138968 c -0.131029,0 -0.236371,-0.10567 -0.236371,-0.2367 0,-0.13102 0.105342,-0.23637 0.236371,-0.23637 z m -9.933529,3.37034 h 24.006026 v 41.86278 H 36.060905 Z m 12.003013,43.25225 a 2.010357,2.010357 0 0 1 2.010315,2.01031 2.010357,2.010357 0 0 1 -2.010315,2.0103 2.010357,2.010357 0 0 1 -2.010308,-2.0103 2.010357,2.010357 0 0 1 2.010308,-2.01031 z"
+       id="rect4978" />
+  </g>
+</svg>

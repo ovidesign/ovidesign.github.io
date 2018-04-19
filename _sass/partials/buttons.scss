@@ -1,13 +1,13 @@
-button.btn,
-a.btn {
+.btn {
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
-  border-radius: 22px;
+  border-radius: 0;
   font-family: $sans;
   font-size: 16px;
   padding: 12px 18px;
+  background-color: transparent;
   cursor: pointer;
   // User-Agent Style Overrides
   border-style: none;
@@ -18,25 +18,18 @@ a.btn {
     outline: -webkit-focus-ring-color auto 0px;
     outline: none;
   }
-  &.btn-default {
-    background-color: $lt-grey;
-    color: $text;
-  }
-  &.btn-primary.btn-nav {
-    background-color: $white;
-    border-style: solid;
-    border-width: 2px;
-    border-color: $violet;
-    color: $violet;
-  }
-  &.btn-accent {
-    background-color: $accent;
-    color: $white;
-  }
-  &.btn-transparent {
-    background-color: transparent;
-    &#navicon {
-      padding: 2px 3px;
-    }
+}
+.btn--violet {
+  border-color: $violet;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 32px;
+  color: $violet;
+}
+
+.btn--a {
+  max-width: 168px;
+  @include tablets {
+    width: 100%;
   }
 }
