@@ -1,23 +1,46 @@
 .header {
   background-color: $violet;
 }
+
 .header__section {
   overflow: hidden;
-  min-height: 300px;
   background-image: url("assets/img/pomo-phone.svg");
-  background-size: contain;
-  background-position: 90% 50%;
   background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
+  @include phones {
+    background-size: contain;
+    background-position: 90% 50%;
+    min-height: 300px;
+  }
+}
+
+.header__content {
+  padding: 78px 32px 32px 32px;
+  max-width: 560px;
+  text-align: left;
 }
 
 .header__heading {
-  padding: 75px 1em;
-  font-size: 3em;
+  font-size: 2em;
+  padding-bottom: 16px;
   @include tablets {
-    padding: 150px 3em;
-    font-size: 6em;
+    font-size: 5em;
   }
-  text-transform: uppercase;
   color: $white;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.header__heading--strong {
+  margin-right: 10000px;
+}
+.header__description {
+color: $white;
+font-size: 18px;
+line-height: 1.6em;
+padding-bottom: 16px;
+}
+// REMOVE THIS - FOR DEV Only
+main {
+  height: 600px;
 }
