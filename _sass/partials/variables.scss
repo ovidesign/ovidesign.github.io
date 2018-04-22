@@ -1,8 +1,8 @@
 // Colors
 $primary: #0078d7;
+$lt-blue: #4e7095;
+$dk-blue: #2a354f;
 $violet: #604d8d;
-$dk-blue: #003c8f;
-$lt-blue: #5e92f3;
 $accent: #db4200;
 $text: #212121;
 $white: #fff;
@@ -14,4 +14,14 @@ $nav-dk: #6d6d6d;
 $lines: #ececec;
 
 // Fonts
-$sans: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$sans:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif;

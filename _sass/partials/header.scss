@@ -1,10 +1,10 @@
 .header {
-  background-color: $violet;
+  background-color: $lt-blue;
 }
 
 .header__section {
   overflow: hidden;
-  background-image: url("assets/img/pomo-phone.svg");
+  background-image: url("assets/img/fastmobile.svg");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right top;
@@ -22,13 +22,14 @@
 }
 
 .header__heading {
-  font-size: 2em;
   padding-bottom: 16px;
-  @include tablets {
-    font-size: 5em;
-  }
+  font-size: 4em;
   color: $white;
   font-weight: 400;
+  line-height: 1em;
+  @include tablets {
+    font-size: 8em;
+  }
 }
 
 .header__heading--strong {
@@ -36,9 +37,10 @@
 }
 .header__description {
 color: $white;
-font-size: 18px;
+font-size: 16px;
 line-height: 1.6em;
 padding-bottom: 16px;
+font-weight: 600;
 }
 // REMOVE THIS - FOR DEV Only
 main {

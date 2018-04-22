@@ -25,31 +25,27 @@
 }
 .btn--violet {
   border-color: $violet;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 16px;
   color: $violet;
 }
-
+.btn--lt-blue {
+  border-color: $lt-blue;
+  color: $lt-blue;
+}
 .btn--inverse {
   border-color: $white;
   background-color: $white;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 16px;
   font-weight: 600;
-  color: $violet;
+  color: $lt-blue;
 }
  .btn--white {
    border-color: $white;
-   border-style: solid;
-   border-width: 3px;
-   border-radius: 16px;
    color: $white;
  }
-
 .btn--a {
   max-width: 168px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 16px;
   @include tablets {
     width: 100%;
   }
