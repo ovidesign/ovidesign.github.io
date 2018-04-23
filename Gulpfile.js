@@ -23,5 +23,12 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+// Compile sass into CSS & auto-inject into browsers
+// gulp.task('header', function() {
+//     return gulp.src("./_sass/header.scss")
+//         .pipe(sass())
+//         .pipe(cleancss({keepBreaks: false}))
+//         .pipe(gulp.dest("./_includes"));
+// });
 
 gulp.task('default', ['serve']);

@@ -1,17 +1,17 @@
 <header class="header">
   {% include logo.html %}
+  {% for val in page.header %}
   <section class="header__section">
     <div class="header__content">
       <h1 class="header__heading">
-        <strong class="header__heading--strong">Fast </strong>
-        <strong class="header__heading--strong">and </strong>
-        <strong class="header__heading--strong">Mobile.</strong>
+        {{val.heading}}
       </h1>
       <p class="header__description">
-        We're a digital agency in Madison, WI. We design and build websites optimized for performance & SEO for the mobile world. BOOM!
+        {{val.desc}}
       </p>
       <a href="#" class="btn btn--inverse btn--a">Services</a>
       <a href="mailto:michael@ovidesign.com" class="btn btn--white btn--a">Get in Touch</a>
     </div>
   </section>
+  {% endfor %}
 </header>

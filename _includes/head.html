@@ -17,10 +17,9 @@
   {% if page.og %}
   {% include og.html %}
   {% endif %}
-  <link rel="apple-touch-icon" href="{{ site.url }}/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="{{ site.url }}/favicon-16x16.png" sizes="16x16">
+  {% include favicon.html %}
   <style>
-  {% include atf.css %}
+  {% include atf.css %}{% include header.css %}
   </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">

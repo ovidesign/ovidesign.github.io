@@ -22,27 +22,32 @@
 }
 
 .header__heading {
-  padding-bottom: 16px;
-  font-size: 4em;
-  color: $white;
-  font-weight: 400;
   line-height: 1em;
-  @include tablets {
-    font-size: 8em;
+  padding-top: 0;
+  color: $white;
+  font-size: 2em;
+  font-weight: 700;
+  white-space: normal;
+  word-spacing: 600px;
+  @include phones {
+    font-size: 3.5em;
   }
-}
-
-.header__heading--strong {
-  margin-right: 10000px;
+  @include tablets {
+    font-size: 5em;
+    padding-top: 16px;
+  }
 }
 .header__description {
 color: $white;
-font-size: 16px;
-line-height: 1.6em;
+font-size: .8em;
+line-height: 1.4em;
 padding-bottom: 16px;
-font-weight: 600;
-}
-// REMOVE THIS - FOR DEV Only
-main {
-  height: 600px;
+font-weight: 400;
+  @include phones {
+    font-size: 1.5em;
+  }
+  @include tablets {
+    font-size: 2em;
+    padding-top: 16px;
+  }
 }

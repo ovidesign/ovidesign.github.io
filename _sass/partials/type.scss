@@ -1,12 +1,11 @@
-$primary: #1565c0;
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   background-color: #fff;
   color: #212121;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 100%;
+  font-family: $sans;
+  font-size: 1.375em;
 }
 
 // Posts

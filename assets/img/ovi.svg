@@ -9,11 +9,14 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   viewBox="0 0 775.99999 775.99998"
-   height="219.00444mm"
-   width="219.00444mm"
+   viewBox="0 0 243.74999 243.74999"
+   height="68.791664mm"
+   width="68.791664mm"
    sodipodi:docname="ovi.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:export-filename="/home/mike/Pictures/ovidesign-logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,8 +31,8 @@
      id="namedview1173"
      showgrid="false"
      inkscape:zoom="0.61855671"
-     inkscape:cx="413.86666"
-     inkscape:cy="413.86666"
+     inkscape:cx="394.46666"
+     inkscape:cy="413.8667"
      inkscape:window-x="1366"
      inkscape:window-y="29"
      inkscape:window-maximized="1"
@@ -49,7 +52,8 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="g3270">
+     id="g3270"
+     transform="scale(0.31411082)">
     <g
        id="layer1"
        transform="translate(-4,-184.36218)" />
