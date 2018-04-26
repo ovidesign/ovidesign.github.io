@@ -1,5 +1,5 @@
 .header {
-  background-color: $lt-blue;
+
 }
 
 .header__section {
@@ -21,10 +21,9 @@
   text-align: left;
 }
 
-.header__heading {
+.header__headline {
   line-height: 1em;
   padding-top: 0;
-  color: $white;
   font-size: 2em;
   font-weight: 700;
   white-space: normal;
@@ -37,8 +36,7 @@
     padding-top: 16px;
   }
 }
-.header__description {
-color: $white;
+.header__heading {
 font-size: .8em;
 line-height: 1.4em;
 padding-bottom: 16px;

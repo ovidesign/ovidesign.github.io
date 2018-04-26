@@ -21,7 +21,7 @@
   <style>
   {% include atf.css %}{% include header.css %}
   </style>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="canonical" href="{{ site.url | replace:'index.html','' | absolute_url }}{{page.permalink}}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <!-- <link rel="manifest" href="/manifest.json"> -->
   {% if page.schema %}

@@ -3,14 +3,16 @@
   {% for val in page.header %}
   <section class="header__section">
     <div class="header__content">
-      <h1 class="header__heading">
-        {{val.heading}}
-      </h1>
-      <p class="header__description">
-        {{val.desc}}
+      <p class="header__headline">
+        {{val.headline}}
       </p>
+      <h1 class="header__heading">
+        {{val.h1}}
+      </h1>
+      {% if val.btn %}
       <a href="#" class="btn btn--inverse btn--a">Services</a>
       <a href="mailto:michael@ovidesign.com" class="btn btn--white btn--a">Get in Touch</a>
+      {% endif %}
     </div>
   </section>
   {% endfor %}
