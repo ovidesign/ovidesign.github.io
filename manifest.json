@@ -1,11 +1,21 @@
 {
-  "short_name": "Ovi",
+  "short_name": "Ovi Design",
   "name": "Ovi Design",
   "icons": [
     {
       "src": "mstile-150x150.png",
       "type": "image/png",
       "sizes": "150x150"
+    },
+    {
+      "src": "android-chrome-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "android-chrome-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
     },
     {
       "src": "android-chrome-192x192.png",
