@@ -8,16 +8,6 @@
       "sizes": "150x150"
     },
     {
-      "src": "android-chrome-48x48.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "android-chrome-96x96.png",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
       "src": "android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
@@ -30,6 +20,6 @@
   ],
   "theme_color": "#4e7095",
   "background_color": "#4e7095",
-  "display": "standalone",
+  "display": "browser",
   "start_url": "index.html"
 }
